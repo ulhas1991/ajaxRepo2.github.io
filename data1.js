@@ -1,3 +1,5 @@
+//New File Editied
+
 var xmlData=createNewXmlData();
 function createNewXmlData(){
 	var xmlData;
