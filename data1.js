@@ -36,7 +36,7 @@ function process1() {
 function process(){
 	if(xmlData.readyState==0 || xml.readyState==4){
 		food = (document.getElementById("inputBox").value);
-		xmlData.open("GET", "../Ajax/data.php?food=" +food, true);
+		xmlData.open("GET", "data.php?food=" +food, true);
 		xmlData.onreadystatechange=handleServerResponse;
 		xmlData.send();
 	}
@@ -46,7 +46,7 @@ function process(){
 }
 
 function handleServerResponse(){
-	alert("helo");
+	
 	if(xmlData.readyState==4){
 		if(xmlData.status==200){
 			xmlResponse=xmlData.responseXML;
