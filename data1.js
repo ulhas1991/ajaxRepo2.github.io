@@ -1,5 +1,4 @@
 var xmlData=createNewXmlData();
-
 function createNewXmlData(){
 	var xmlData;
 	if(window.ActiveXObject){
