@@ -39,7 +39,7 @@ function process(){
 		food = (document.getElementById("inputBox").value);
 		xmlData.open("GET", "data.php?food=" +food, true);
 		xmlData.onreadystatechange=handleServerResponse;
-		xmlData.send();
+		xmlData.send(null);
 	}
 	else{
 		setTimeout('process()',100);
