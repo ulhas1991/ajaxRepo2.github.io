@@ -31,7 +31,7 @@ function process1() {
 		food = (document.getElementById("inputBox").value);
 		xhttp.onreadystatechange =handleServerResponse();
 		xhttp.open("GET", "data.php?food="+food, true);   
-		xhttp.send(); 
+		xhttp.send(null); 
    }
 
 function process(){
