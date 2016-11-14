@@ -1,3 +1,5 @@
+//New File Editied
+
 var xmlData=createNewXmlData();
 function createNewXmlData(){
 	var xmlData;
@@ -28,7 +30,7 @@ function process1() {
 		var xhttp = new XMLHttpRequest();  
 		food = (document.getElementById("inputBox").value);
 		xhttp.onreadystatechange =handleServerResponse();
-		xhttp.open("GET", "../Ajax/data.php?food="+food, true);   
+		xhttp.open("GET", "data.php?food="+food, true);   
 		xhttp.send(); 
    }
 
